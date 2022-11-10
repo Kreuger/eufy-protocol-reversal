@@ -1,0 +1,82 @@
+Characteristics: {
+    Characteristic {
+        uuid: 00002a0500001000800000805f9b34fb,
+        service_uuid: 0000180100001000800000805f9b34fb,
+        properties: READ | INDICATE,
+    },
+    Characteristic {
+        uuid: 4143f6b1530049004700414943415245,
+        service_uuid: 4143f6b0530049004700414943415245,
+        properties: WRITE_WITHOUT_RESPONSE,
+    },
+    Characteristic {
+        uuid: 4143f6b2530049004700414943415245,
+        service_uuid: 4143f6b0530049004700414943415245,
+        properties: NOTIFY,
+    },
+    Characteristic {
+        uuid: 4143f6b3530049004700414943415245,
+        service_uuid: 4143f6b0530049004700414943415245,
+        properties: READ | WRITE_WITHOUT_RESPONSE | NOTIFY,
+    },
+    Characteristic {
+        uuid: d618d001600010008000000000000000,
+        service_uuid: d618d000600010008000000000000000,
+        properties: WRITE,
+    },
+    Characteristic {
+        uuid: d618d002600010008000000000000000,
+        service_uuid: d618d000600010008000000000000000,
+        properties: WRITE_WITHOUT_RESPONSE | NOTIFY,
+    },
+}
+Services: {
+    Service {
+        uuid: 0000180100001000800000805f9b34fb,
+        primary: true,
+        characteristics: {
+            Characteristic {
+                uuid: 00002a0500001000800000805f9b34fb,
+                service_uuid: 0000180100001000800000805f9b34fb,
+                properties: READ | INDICATE,
+            },
+        },
+    },
+    Service {
+        uuid: 4143f6b0530049004700414943415245,
+        primary: true,
+        characteristics: {
+            Characteristic {
+                uuid: 4143f6b1530049004700414943415245,
+                service_uuid: 4143f6b0530049004700414943415245,
+                properties: WRITE_WITHOUT_RESPONSE,
+            },
+            Characteristic {
+                uuid: 4143f6b2530049004700414943415245,
+                service_uuid: 4143f6b0530049004700414943415245,
+                properties: NOTIFY,
+            },
+            Characteristic {
+                uuid: 4143f6b3530049004700414943415245,
+                service_uuid: 4143f6b0530049004700414943415245,
+                properties: READ | WRITE_WITHOUT_RESPONSE | NOTIFY,
+            },
+        },
+    },
+    Service {
+        uuid: d618d000600010008000000000000000,
+        primary: true,
+        characteristics: {
+            Characteristic {
+                uuid: d618d001600010008000000000000000,
+                service_uuid: d618d000600010008000000000000000,
+                properties: WRITE,
+            },
+            Characteristic {
+                uuid: d618d002600010008000000000000000,
+                service_uuid: d618d000600010008000000000000000,
+                properties: WRITE_WITHOUT_RESPONSE | NOTIFY,
+            },
+        },
+    },
+}
